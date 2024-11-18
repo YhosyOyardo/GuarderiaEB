@@ -1,0 +1,116 @@
+/* Estilos para el video de fondo */
+.video-background {
+    position: fixed; /* Fija el video en la parte posterior */
+    top: 0; /* Al principio de la página */
+    left: 0; /* A la izquierda de la página */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    object-fit: cover; /* Asegura que el video cubra todo el contenedor */
+    z-index: -1; /* Envía el video detrás del contenido */
+}
+
+/* Estilos para el contenedor del formulario */
+.form-container {
+    position: relative; /* Permite que el contenedor esté en relación al video de fondo */
+    z-index: 1; /* Asegura que el contenido del formulario esté por encima del video */
+    background: rgba(239, 144, 233, 0.8); /* Fondo con un color gris claro y opacidad para mejorar la legibilidad sobre el video */
+    padding: 40px; /* Espaciado interno de 20px alrededor del contenido, proporciona espacio entre el borde del contenedor y su contenido */
+    border-radius: 15px; /* Bordes redondeados de 10px para suavizar la apariencia del contenedor */
+    box-shadow: 0 4px 18px rgba(235, 28, 231, 0.83); /* Sombra de 4px en la dirección vertical y 8px en la dirección horizontal, con un color negro semitransparente para dar profundidad al contenedor */
+}
+
+/* Estilos para el mensaje de error */
+.error-message {
+    color: red; /* Color rojo para el mensaje de error */
+    font-weight: bold; /* Negrita para resaltar el mensaje */
+    font-size: 1.2em; /* Tamaño de letra (1.2em = 120% del tamaño base) */
+    margin-bottom: 10px; /* Espacio inferior para separación */
+}
+
+/* Estilos para los campos del formulario */
+.form-control {
+    width: 90%; /* Ancho completo del campo */
+    height: 45px; /* Altura de los campos del formulario */
+    font-size: 1em; /* Tamaño de letra */
+    padding: 10px; /* Espaciado interno */
+}
+
+/* Estilos para las etiquetas del formulario */
+.form-label {
+    font-size: 1.1em; /* Tamaño de letra para las etiquetas */
+    font-weight: bold; /* Negrita para las etiquetas */
+    color: #0e0d0d; /* Color de texto para las etiquetas */
+}
+
+/* Estilos para el botón de envío */
+.btn-primary {
+    background-color: #480b2d; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    font-size: 1em; /* Tamaño de letra para el botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border-radius: 25px;
+}
+
+/* Estilos para el botón de limpiar */
+.btn-secondary {
+    background-color: #e46fcb; /* Color de fondo del botón secundario */
+    color: white; /* Color del texto del botón */
+    font-size: 1em; /* Tamaño de letra para el botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border-radius: 25px;
+}
+
+@font-face {
+    font-family: 'MiFuente'; /* Nombre que usarás para referenciar la fuente */
+    src: url('../fontss/LOVELY.otf') format('truetype'); /* Ruta al archivo de la fuente */
+}
+
+/* Estilos para el encabezado */
+h3 {
+    font-family: 'MiFuente', sans-serif; /* Usar la fuente personalizada */
+   
+    font-size: 2em; /* Tamaño del texto (ajusta según tus necesidades) */
+    color: #2a061f; /* Color del texto */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+/*----------------------listar---------------------*/
+/* Estilo para el encabezado de la lista de administradores */
+h3 {
+    font-family: 'MiFuente', sans-serif; /* Usa la fuente personalizada */
+    font-weight: bold; /* Negrita */
+    font-size: 2em; /* Ajusta el tamaño de la fuente */
+    color: #333; /* Color del texto */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilos para la tabla */
+.table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsar bordes */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilo para las celdas de la tabla */
+.table th, .table td {
+    padding: 10px; /* Espaciado interno */
+    text-align: left; /* Alinear texto a la izquierda */
+    border: 3px solid #ddd; /* Borde ligero */
+}
+
+/* Estilo para el encabezado de la tabla */
+.table th {
+    background-color: #3a052e; /* Color de fondo del encabezado */
+    color: white; /* Color de texto */
+    font-weight: bold; /* Negrita */
+}
+
+/* Estilo para las filas de la tabla al pasar el mouse */
+.table tr:hover {
+    background-color: #c07171; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilo para botones */
+.btn {
+    margin: 5px; /* Espacio entre botones */
+}
+

@@ -1,0 +1,381 @@
+/* Estilos Generales */  
+.footer20 { 
+    background: linear-gradient(to bottom, #ebc803, #FFFF00); /* Degradado de amarillo a blanco */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alineación del texto al centro */
+    padding: 50px 0; /* Espaciado interno */
+    width: 100%; /* Ancho completo */
+    z-index: 5; /* Asegura que esté sobre el video */
+    box-shadow: 0 4px 20px rgb(228, 219, 219); /* Sombra para efecto 3D */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Opcional: Efecto de texto con sombra */
+.footer20 h1, .footer20 p {
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8);
+}
+
+.button-container {
+    position: fixed; /* Cambiado a fixed para que permanezca en su lugar */
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Ajusta el ancho del fondo de los botones */
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+}
+.button-container {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los botones se ajusten a múltiples líneas si es necesario */
+    justify-content: center; /* Centrar los botones horizontalmente */
+}
+
+/* Encabezado */
+.header {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 5; /* Asegura que esté encima del video */
+}
+
+/* Ajustar el video de fondo */
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Ancho completo del viewport */
+    height: 100vh; /* Altura completa del viewport */
+    object-fit: cover; /* Cubre el área sin distorsionar */
+    z-index: 1; /* Asegura que el video esté detrás de otros elementos */
+}
+
+/* Estilo de los botones de "INFORMACIÓN" e "INICIO DE SESIÓN" */
+.button-container a.square-button {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #2a0101;
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 15px;
+    border: none;
+}
+
+.button-container a.square-button:hover {
+    transition: background-color 0.4s ease, color 0.3s ease;
+    color: #2a0101;
+    transform: scale(1.45); /* Aumentar un poco el efecto de hover */
+}
+
+.logo {
+    width: 130px;
+    height: auto;
+    margin-right: auto;
+}
+
+
+/* Importar fuente personalizada */
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('fontss/Comedo.otf') format('truetype');
+}
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Asegura que la navbar esté sobre el video */
+}
+
+/* Importa y define la fuente Bigfans */
+@font-face {
+    font-family: 'Bigfans';
+    src: url('fontss/Comedo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilo de letra y tamaño para el texto en text-overlay */
+.text-overlay h1 { 
+    font-family: 'Bigfans', sans-serif;
+    font-size: 80px; /* Ajusta este valor para cambiar el tamaño del texto */
+    text-align: center;
+    text-transform: uppercase;
+    margin: 5px;
+    padding: 1.5em;
+    background: linear-gradient(to right, #632d06, #FFA500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(15, 5, 5, 0.3);
+}
+
+/* Posicionamiento de la superposición de texto */
+.text-overlay {
+    position: absolute;
+    top: -4%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    z-index: 15; /* Asegura que el texto está sobre el video */
+}
+
+/* Formulario de inicio de sesión */
+.page-content {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 800px;
+    background-color: rgba(228, 235, 229, 0.9);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 15; /* Asegura que el formulario esté sobre el video */
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-container form {
+    flex: 1;
+    margin-right: 20px;
+}
+.login-image {
+    width: 100%; /* Cambiar a 100% para que ocupe el ancho del contenedor */
+    max-width: 300px; /* Ancho máximo para que no exceda de 300px */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 43%; /* Mantiene el borde redondeado */
+    border: 5px solid rgba(235, 228, 228, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: block; /* Asegura que se comporte como un bloque */
+    margin: 20px auto; /* Centra la imagen y agrega un margen superior */
+}
+
+/* Estilo del encabezado de inicio de sesión */
+.login-header {
+    font-size: 36px;
+    color: #107b96;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los campos de entrada y el botón */
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Asegura que el input ocupe el 100% de su contenedor */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 80%;
+    padding: 8px;
+    font-size: 18px;
+    color: white;
+    background-color: #107b96;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0a5968;
+}
+
+/* Alert de error */
+.alert {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Footer */
+.footer {
+    background-color: #581e04;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    width: 100%;
+    z-index: 5; /* Asegura que esté sobre el video */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 1024px) { /* Tablets */
+    /* Estilo del footer */
+    .footer20 {
+        padding: 10px; /* Reduce el espacio alrededor del footer */
+    }
+    .button-container {
+        flex-direction: column; /* Apila los botones verticalmente */
+        width: 80%; /* Ancho reducido */
+        padding: 5px; /* Reduce el padding */
+        display: flex; /* Alinea los botones en una columna */
+        gap: 0px; /* Espaciado entre botones */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+    }
+    
+    /* Estilo de los enlaces de botones */
+    .button-container a {
+        padding: 0px 12px; /* Espaciado interno */
+        margin-top: 0; /* Espaciado superior de los botones */
+    }
+
+/* Botones de inicio e información */
+.button-container a.square-button {
+    margin: 5px 115px; /* Espaciado vertical */
+    height:min-content; /* Permite que el botón ajuste su altura automáticamente */
+   
+}
+
+    /* Logo alineado a la izquierda */
+ .logo {
+    width: 99px; /* Tamaño del logo */
+    position: relative; /* Permite manipular la posición */
+    left: 25px; /* Alinea el logo al lado izquierdo */
+    margin-right: 460px; /* Espacio a la derecha del logo */
+
+    /* Para ajustar verticalmente */
+    top: 59px; 
+}
+    
+
+    /* Estilo de la navbar */
+    .navbar {
+        top: 30%; /* Ajusta la posición de la navbar en relación a la parte superior */
+        font-size: 14px; /* Ajusta el tamaño de fuente de la navbar */
+    }
+
+    /* Ajustes de la cabecera */
+    .header {
+        height: 90vh; /* Ajustar la altura de la cabecera para un diseño más compacto */
+    }
+
+    /* Estilo del texto en la superposición */
+    .text-overlay h1 {
+        font-size: 10px; /* Reduce el tamaño del texto para que quepa mejor en la pantalla */
+    }
+
+    /* Estilo de contenido de página */
+    .page-content {
+        padding: 25px; /* Reduce el espacio interno del contenido de la página */
+        width: 90%; /* Asegura que el contenido ocupe casi todo el ancho */
+    }
+
+    /* Ajustes para imagen de inicio de sesión */
+    .login-image {
+        width: 0%; /* Ajusta el ancho de la imagen de inicio de sesión */
+    }
+}
+
+@media (max-width: 768px) { 
+    /* Dispositivos Móviles */
+    .footer20 {
+        padding: 80px;
+    }
+
+    .footer20 h1, .footer20 p {
+        font-size: 8px; /* Ajusta el tamaño de fuente */
+    }
+
+    /* Contenedor del logo y botones */
+    .button-container {
+        flex-direction: 70px; /* Apila los botones verticalmente */
+        width: 80%; /* Ancho reducido */
+        padding: 5px; /* Reduce el padding */
+        
+        display:flex;/* Alinea los botones en una fila */
+        gap: 0px; /* Espaciado entre botones */
+    }
+.button-container a {
+    display: center; /* Corrige el display a flex para que funcione */
+    padding: 0px 12px;
+    margin-top: -315px; /* Ajusta esta propiedad para subir o bajar el contenedor */
+}
+
+/* Botones de inicio e información */
+.button-container a.square-button {
+    margin: 5px 115px; /* Espaciado vertical */
+    height:min-content; /* Permite que el botón ajuste su altura automáticamente */
+   
+}
+
+    /* Logo alineado a la izquierda */
+ .logo {
+    width: 79px; /* Tamaño del logo */
+    position: relative; /* Permite manipular la posición */
+    left: 25px; /* Alinea el logo al lado izquierdo */
+    margin-right: 460px; /* Espacio a la derecha del logo */
+
+    /* Para ajustar verticalmente */
+    top: 19px; 
+}
+    .navbar {
+        top: 20%; /* Ajusta la posición de la navbar */
+        font-size: 50px; /* Ajusta tamaño de fuente */
+    }
+
+    #background-video {
+        height: auto; /* Cambiar a auto para que ajuste la altura */
+        min-height: 70vh; /* Mantiene al menos 70vh */
+    }
+    
+    .header {
+        height: 70vh; /* Reducir la altura */
+    }
+
+    .text-overlay h1 {
+        font-size: 35px; /* Reduce el tamaño del texto */
+    }
+
+    .page-content {
+        padding: 15px; /* Reduce el padding */
+        width: 85%; /* Asegura el ancho completo  login*/
+    }
+
+    .login-image {
+        width: 45%; /* Ajustar el ancho */
+    }
+
+    button[type="submit"] {
+        width: 90%; /* Botón de ancho completo */
+        padding: 10px; /* Ajustar el padding */
+        font-size: 16px; /* Ajustar tamaño de fuente */
+    }
+}
+   
+

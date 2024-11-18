@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Generar QR</title>
+</head>
+<body>
+    <h2>Generar QR para recoger al niño</h2>
+    <form action="generar_qr.php" method="POST">
+        <label for="CI_N">CI del Niño:</label>
+        <input type="text" name="CI_N" required>
+        <br>
+        <label for="CI_T">CI del Tutor:</label>
+        <input type="text" name="CI_T" required>
+        <br>
+        <button type="submit">Generar QR</button>
+    </form>
+</body>
+</html>
